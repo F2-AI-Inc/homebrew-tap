@@ -1,7 +1,7 @@
 class Docray < Formula
   desc "X-ray for documents: lossless PDF-to-JSON extraction with bounding boxes"
   homepage "https://f2-ai-inc.github.io/docray/"
-  version "0.4.0"
+  version "0.5.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   BASE = "https://github.com/F2-AI-Inc/docray/releases/download/v#{version}"
@@ -9,22 +9,22 @@ class Docray < Formula
   on_macos do
     on_arm do
       url "#{BASE}/docray-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "b6a987a0739393098a151b3664b24664fee556e04144418095976ceca5d0fa9f"
+      sha256 "de9a39c5896ace1b7c1e023771a33098874b0f0341bced41ec7672ef82b0f83c"
     end
     on_intel do
       url "#{BASE}/docray-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "b2161ed9fb28e488e7ef350bc96131fea854f96a005f741f8ea5db9349530917"
+      sha256 "46b0acd24c69ebf2f4019db676d7c74296e9cb197afc6a626df4b1102b69f25a"
     end
   end
 
   on_linux do
     on_arm do
       url "#{BASE}/docray-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fad1d5ad9d0160fc17dc08def3389a1c1850bafc75db07e383b0133516a000f5"
+      sha256 "4ea82465e1d33056164f2ae0dcc82ee646758f0badb8f52b87f900a21bf90d12"
     end
     on_intel do
       url "#{BASE}/docray-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "816be5571afa785eb57dc1d1eeef4ef93d21fe973b598105e21ea3166168b806"
+      sha256 "1fc0d8194c3dc3e59ee8eeecad77183b641aaa8fd213771774a9b53ad5364ec2"
     end
   end
 
